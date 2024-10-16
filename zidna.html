@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Personal Information</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for additional styling -->
+    <style>
+        body {
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
+        .personal-info-card {
+            background: rgba(255, 255, 255, 0.15);
+            border: none;
+            border-radius: 15px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .personal-info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+        }
+        .profile-image {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .profile-image:hover {
+            transform: rotate(10deg) scale(1.1);
+        }
+        .info-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+        .info-text {
+            font-size: 1rem;
+            color: #e0e0e0;
+            margin: 5px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            transition: opacity 0.3s;
+        }
+        .social-icons a:hover img {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="col-md-6">
+        <div class="personal-info-card text-center">
+            <img src="IMG-20230918-WA0004.jpg" alt="Profile Image" class="profile-image">
+            <h2 class="info-title">Zidna Musarrof A</h2>
+            <p class="info-text">Location: Sidoarjo, Jawa Timur</p>
+            <p class="info-text">Occupation: Student / Intern at Pikaler Home Studio</p>
+            <p class="info-text">Interests: Travelling, Photography, Web Development</p>
+            <div class="social-icons">
+                <!-- Instagram Icon -->
+                <a href="https://www.instagram.com/zdnamusyrf/?utm_source=ig_web_button_share_sheet" target="_blank" aria-label="Instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Icon">
+                </a>
+                <!-- TikTok Icon -->
+                    <a href="https://www.tiktok.com/@zidnaay?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="TikTok">
+                    <img src="https://download.logo.wine/logo/TikTok/TikTok-Logo.wine.png" alt="TikTok Icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
